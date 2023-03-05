@@ -11,6 +11,7 @@ html {
 
 .neutralContainer {
     display: flex;
+    justify-content: space-between;
     height: 90vh;
     background-color: lightcyan;
     align-items: center;
@@ -19,7 +20,8 @@ html {
 /* The Dark Side */
 
 .darkCard {
-    width: 50%;
+    width: 0%;
+    flex-grow: 1;
     background-color: white;
     border-style: solid;
     border-width: 5px;
@@ -73,8 +75,7 @@ html {
 }
 
 .darkCard:hover {
-    /* flex-grow: 3; */
-    width: 100%;
+    flex-grow: 2;
     background-color: black;
     transition: background-color 1s linear;
 }
@@ -123,7 +124,8 @@ html {
 /* The Force */
 
 .forceCard {
-    width: 50%;
+    width: 0%;
+    flex-grow: 1;
     background-color: white;
     border-style: solid;
     border-width: 5px;
@@ -159,7 +161,7 @@ html {
 }
 
 .forceCard--hover:hover {
-    width: 100%;
+    flex-grow: 2;
     background-color: cornsilk;
     transition: background-color 2s linear;
 }
