@@ -1,4 +1,4 @@
-# BEM Notation and Object Oriented CSS !
+# BEM Notation and Object Oriented CSS
 
 A project on how to write scaleable CSS using BEM notation and OOCSS
 

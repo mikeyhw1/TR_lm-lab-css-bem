@@ -1,7 +1,206 @@
 /* You can delete / re-write this img class  */
 
-img {
-    max-width: 200px;
+html {
+    height: 100%;
 }
 
-/* Happy coding! */
+.neutralTitle {
+    text-align: center;
+    height: 10%;
+}
+
+.neutralContainer {
+    display: flex;
+    height: 90vh;
+    background-color: lightcyan;
+    align-items: center;
+}
+
+/* The Dark Side */
+
+.darkCard {
+    width: 50%;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25%;
+    border-color: crimson;
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkCard > h2 {
+    color: darkgray;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.darkCard > img {
+    max-width: 200px;
+    border-radius: 20%;
+    max-width: 30%;
+    height: auto;
+    opacity: 0.3;
+    filter: grayscale(80%);
+}
+
+#content_1 {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: darkslategray;
+}
+
+#content_2 {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: darkslategray;
+}
+
+#content_3 {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: darkslategray;
+}
+
+#content_4 {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: darkslategray;
+}
+
+.darkCard:hover {
+    /* flex-grow: 3; */
+    width: 100%;
+    background-color: black;
+    transition: background-color 1s linear;
+}
+
+.darkCard:hover > h2 {
+    color: indianred;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.darkCard:hover > #content_1 {
+    color: crimson;
+    font-size: 1.1rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.darkCard:hover > #content_2 {
+    color: aqua;
+    font-size: 1.3rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.darkCard:hover > #content_3 {
+    color: chartreuse;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.darkCard:hover > #content_4 {
+    color: gold;
+    font-size: 1.7rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.darkCard > img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transition: filter 1s;
+    transition: opacity 1s;
+}
+
+/* The Force */
+
+.forceCard {
+    width: 50%;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25%;
+    border-color: mediumspringgreen;
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forceCard__title {
+    color: darkkhaki;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.forceCard__img {
+    max-width: 200px;
+    border-radius: 20%;
+    max-width: 30%;
+    height: auto;
+    opacity: 0.3;
+    filter: grayscale(80%);
+}
+
+.forceCard__content {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: khaki;
+}
+
+.forceCard--hover:hover {
+    width: 100%;
+    background-color: cornsilk;
+    transition: background-color 2s linear;
+}
+
+.forceCard--hover:hover > .forceCard__title--hover {
+    color: green;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.forceCard--hover:hover > .forceCard__content1--hover {
+    color: crimson;
+    font-size: 1.1rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.forceCard--hover:hover > .forceCard__content2--hover {
+    color: aqua;
+    font-size: 1.3rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.forceCard--hover:hover > .forceCard__content3--hover {
+    color: chartreuse;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.forceCard--hover:hover > .forceCard__content4--hover {
+    color: gold;
+    font-size: 1.7rem;
+    font-weight: 900;
+    transition: color 1s;
+}
+
+.forceCard__img--hover:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transition: filter 1s;
+    transition: opacity 1s;
+}

@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+    <body>
+        <h1 class="neutralTitle">BEM Wars</h1>
+        <div class="neutralContainer">
+            <div class="darkCard">
+                <h2>The Dark Side</h2>
+                <img src="./images/vader.jpeg" />
+                <p id="content_1">Nesting!</p>
+                <p id="content_2">Conflict!</p>
+                <p id="content_3">Specificity Wars!</p>
+                <p id="content_4">Cookies</p>
+            </div>
 
-<body>
-    <h1>BEM Wars</h1>
-    <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+            <div class="forceCard forceCard--hover">
+                <h2 class="forceCard__title forceCard__title--hover">The Force</h2>
+                <img class="forceCard__img forceCard__img--hover" src="./images/yoda.jpeg" />
+                <p class="forceCard__content forceCard__content1--hover">Love</p>
+                <p class="forceCard__content forceCard__content2--hover">Beauty</p>
+                <p class="forceCard__content forceCard__content3--hover">CSS that Scales!</p>
+                <p class="forceCard__content forceCard__content4--hover">Great warrior. Wars not make one great!</p>
+            </div>
         </div>
-
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
