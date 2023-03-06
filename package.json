@@ -1,0 +1,14 @@
+{
+  "name": "tr_lm-lab-css-bem",
+  "version": "1.0.0",
+  "description": "A project on how to write scaleable CSS using BEM notation and OOCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
