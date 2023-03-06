@@ -50,28 +50,35 @@ html {
     filter: grayscale(80%);
 }
 
-#content_1 {
+#darkSideContent_1 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
 }
 
-#content_2 {
+#darkSideContent_2 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
 }
 
-#content_3 {
+#darkSideContent_3 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
 }
 
-#content_4 {
+#darkSideContent_4 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
+}
+
+#darkSideButton {
+    font-size: 2rem;
+    padding: 1%;
+    color: red;
+    background-color: black;
 }
 
 .darkCard:hover {
@@ -86,28 +93,28 @@ html {
     transition: color 1s;
 }
 
-.darkCard:hover > #content_1 {
+.darkCard:hover > #darkSideContent_1 {
     color: crimson;
     font-size: 1.1rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.darkCard:hover > #content_2 {
+.darkCard:hover > #darkSideContent_2 {
     color: aqua;
     font-size: 1.3rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.darkCard:hover > #content_3 {
+.darkCard:hover > #darkSideContent_3 {
     color: chartreuse;
     font-size: 1.5rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.darkCard:hover > #content_4 {
+.darkCard:hover > #darkSideContent_4 {
     color: gold;
     font-size: 1.7rem;
     font-weight: 900;
@@ -121,9 +128,9 @@ html {
     transition: opacity 1s;
 }
 
-/* The Force */
+/* The Light Side */
 
-.forceCard {
+.lightCard {
     width: 0%;
     flex-grow: 1;
     background-color: white;
@@ -139,13 +146,13 @@ html {
     justify-content: center;
 }
 
-.forceCard__title {
+.lightCard__title {
     color: darkkhaki;
     font-size: 2rem;
     font-weight: 100;
 }
 
-.forceCard__img {
+.lightCard__img {
     max-width: 200px;
     border-radius: 20%;
     max-width: 30%;
@@ -154,53 +161,60 @@ html {
     filter: grayscale(80%);
 }
 
-.forceCard__content {
+.lightCard__content {
     font-size: 0.8rem;
     font-weight: 100;
     color: khaki;
 }
 
-.forceCard--hover:hover {
+#lightButton {
+    font-size: 2rem;
+    padding: 1%;
+    color: greenyellow;
+    background-color: darkgreen;
+}
+
+.lightCard--hover:hover {
     flex-grow: 2;
     background-color: cornsilk;
     transition: background-color 2s linear;
 }
 
-.forceCard--hover:hover > .forceCard__title--hover {
+.lightCard--hover:hover > .lightCard__title--hover {
     color: green;
     font-weight: 900;
     transition: color 1s;
 }
 
-.forceCard--hover:hover > .forceCard__content1--hover {
+.lightCard--hover:hover > .lightCard__content1--hover {
     color: crimson;
     font-size: 1.1rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.forceCard--hover:hover > .forceCard__content2--hover {
+.lightCard--hover:hover > .lightCard__content2--hover {
     color: aqua;
     font-size: 1.3rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.forceCard--hover:hover > .forceCard__content3--hover {
+.lightCard--hover:hover > .lightCard__content3--hover {
     color: chartreuse;
     font-size: 1.5rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.forceCard--hover:hover > .forceCard__content4--hover {
+.lightCard--hover:hover > .lightCard__content4--hover {
     color: gold;
     font-size: 1.7rem;
     font-weight: 900;
     transition: color 1s;
 }
 
-.forceCard__img--hover:hover {
+.lightCard__img--hover:hover {
     opacity: 1;
     filter: grayscale(0%);
     transition: filter 1s;
