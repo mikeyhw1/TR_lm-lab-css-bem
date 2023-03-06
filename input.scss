@@ -39,13 +39,13 @@ html {
     color: darkgray;
     font-size: 2rem;
     font-weight: 100;
+    text-align: center;
 }
 
 .darkCard > img {
-    max-width: 200px;
     border-radius: 20%;
-    max-width: 30%;
-    height: auto;
+    max-height: 30%;
+    max-width: 90%;
     opacity: 0.3;
     filter: grayscale(80%);
 }
@@ -54,31 +54,39 @@ html {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
+    text-align: center;
 }
 
 #darkSideContent_2 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
+    text-align: center;
 }
 
 #darkSideContent_3 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
+    text-align: center;
 }
 
 #darkSideContent_4 {
     font-size: 0.8rem;
     font-weight: 100;
     color: darkslategray;
+    text-align: center;
 }
 
 #darkSideButton {
     font-size: 2rem;
-    padding: 1%;
+    width: 90%;
+    max-width: 90%;
+    text-overflow: clip;
+    overflow: hidden;
     color: red;
     background-color: black;
+    text-align: center;
 }
 
 .darkCard:hover {
@@ -98,36 +106,28 @@ html {
     color: crimson;
     font-size: 1.1rem;
     font-weight: 900;
-    transition: color 1s;
-    transition: font-size 1s;
-    transition: font-weight 1s;
+    transition: all 1s;
 }
 
 .darkCard:hover > #darkSideContent_2 {
     color: aqua;
     font-size: 1.3rem;
     font-weight: 900;
-    transition: color 1s;
-    transition: font-size 1s;
-    transition: font-weight 1s;
+    transition: all 1s;
 }
 
 .darkCard:hover > #darkSideContent_3 {
     color: chartreuse;
     font-size: 1.5rem;
     font-weight: 900;
-    transition: color 1s;
-    transition: font-size 1s;
-    transition: font-weight 1s;
+    transition: all 1s;
 }
 
 .darkCard:hover > #darkSideContent_4 {
     color: gold;
     font-size: 1.7rem;
     font-weight: 900;
-    transition: color 1s;
-    transition: font-size 1s;
-    transition: font-weight 1s;
+    transition: all 1s;
 }
 
 .darkCard > img:hover {
@@ -158,13 +158,13 @@ html {
         color: darkkhaki;
         font-size: 2rem;
         font-weight: 100;
+        text-align: center;
     }
 
     &__img {
-        max-width: 200px;
         border-radius: 20%;
-        max-width: 30%;
-        height: auto;
+        max-height: 30%;
+        max-width: 90%;
         opacity: 0.3;
         filter: grayscale(80%);
     }
@@ -173,13 +173,18 @@ html {
         font-size: 0.8rem;
         font-weight: 100;
         color: khaki;
+        text-align: center;
     }
 
     &__button {
         font-size: 2rem;
-        padding: 1%;
+        width: 90%;
+        max-width: 90%;
+        text-overflow: clip;
+        overflow: hidden;
         color: greenyellow;
         background-color: darkgreen;
+        text-align: center;
     }
 
     &:hover {
@@ -191,8 +196,7 @@ html {
     &:hover > &__title--hover {
         color: green;
         font-weight: 900;
-        transition: color 1s;
-        transition: font-weight 1s;
+        transition: all 1s;
     }
 
     $colors: (1 crimson, 2 aqua, 3 chartreuse, 4 gold);
@@ -201,16 +205,23 @@ html {
             color: $color;
             font-size: 0.9rem + 0.2rem * $i;
             font-weight: 900;
-            transition: color 1s;
-            transition: font-size 1s;
-            transition: font-weight 1s;
+            transition: all 1s;
         }
     }
 
     &__img:hover {
         opacity: 1;
         filter: grayscale(0%);
-        transition: filter 1.5s;
-        transition: opacity 1.5s;
+        transition: all 1.5s;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .neutralContainer {
+        flex-wrap: wrap;
+    }
+    .darkCard,
+    .lightCard {
+        width: 100%;
     }
 }
