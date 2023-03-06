@@ -1,3 +1,5 @@
+/* NOTE: sass input.scss output.css */
+
 html {
     height: 100%;
 }
@@ -82,13 +84,14 @@ html {
 .darkCard:hover {
     flex-grow: 2;
     background-color: black;
-    transition: background-color 1s linear;
+    transition: background-color 1s;
 }
 
 .darkCard:hover > h2 {
     color: indianred;
     font-weight: 900;
     transition: color 1s;
+    transition: font-weight 1s;
 }
 
 .darkCard:hover > #darkSideContent_1 {
@@ -96,6 +99,8 @@ html {
     font-size: 1.1rem;
     font-weight: 900;
     transition: color 1s;
+    transition: font-size 1s;
+    transition: font-weight 1s;
 }
 
 .darkCard:hover > #darkSideContent_2 {
@@ -103,6 +108,8 @@ html {
     font-size: 1.3rem;
     font-weight: 900;
     transition: color 1s;
+    transition: font-size 1s;
+    transition: font-weight 1s;
 }
 
 .darkCard:hover > #darkSideContent_3 {
@@ -110,6 +117,8 @@ html {
     font-size: 1.5rem;
     font-weight: 900;
     transition: color 1s;
+    transition: font-size 1s;
+    transition: font-weight 1s;
 }
 
 .darkCard:hover > #darkSideContent_4 {
@@ -117,13 +126,15 @@ html {
     font-size: 1.7rem;
     font-weight: 900;
     transition: color 1s;
+    transition: font-size 1s;
+    transition: font-weight 1s;
 }
 
 .darkCard > img:hover {
     opacity: 1;
     filter: grayscale(0%);
-    transition: filter 1s;
-    transition: opacity 1s;
+    transition: filter 1.5s;
+    transition: opacity 1.5s;
 }
 
 /* The Light Side */
@@ -142,79 +153,64 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.lightCard__title {
-    color: darkkhaki;
-    font-size: 2rem;
-    font-weight: 100;
-}
+    &__title {
+        color: darkkhaki;
+        font-size: 2rem;
+        font-weight: 100;
+    }
 
-.lightCard__img {
-    max-width: 200px;
-    border-radius: 20%;
-    max-width: 30%;
-    height: auto;
-    opacity: 0.3;
-    filter: grayscale(80%);
-}
+    &__img {
+        max-width: 200px;
+        border-radius: 20%;
+        max-width: 30%;
+        height: auto;
+        opacity: 0.3;
+        filter: grayscale(80%);
+    }
 
-.lightCard__content {
-    font-size: 0.8rem;
-    font-weight: 100;
-    color: khaki;
-}
+    &__content {
+        font-size: 0.8rem;
+        font-weight: 100;
+        color: khaki;
+    }
 
-.lightCard__button {
-    font-size: 2rem;
-    padding: 1%;
-    color: greenyellow;
-    background-color: darkgreen;
-}
+    &__button {
+        font-size: 2rem;
+        padding: 1%;
+        color: greenyellow;
+        background-color: darkgreen;
+    }
 
-.lightCard--hover:hover {
-    flex-grow: 2;
-    background-color: cornsilk;
-    transition: background-color 2s linear;
-}
+    &:hover {
+        flex-grow: 2;
+        background-color: cornsilk;
+        transition: background-color 1s;
+    }
 
-.lightCard--hover:hover > .lightCard__title--hover {
-    color: green;
-    font-weight: 900;
-    transition: color 1s;
-}
+    &:hover > &__title--hover {
+        color: green;
+        font-weight: 900;
+        transition: color 1s;
+        transition: font-weight 1s;
+    }
 
-.lightCard--hover:hover > .lightCard__content1--hover {
-    color: crimson;
-    font-size: 1.1rem;
-    font-weight: 900;
-    transition: color 1s;
-}
+    $colors: (1 crimson, 2 aqua, 3 chartreuse, 4 gold);
+    @each $i, $color in $colors {
+        &:hover > &__content#{$i}--hover {
+            color: $color;
+            font-size: 0.9rem + 0.2rem * $i;
+            font-weight: 900;
+            transition: color 1s;
+            transition: font-size 1s;
+            transition: font-weight 1s;
+        }
+    }
 
-.lightCard--hover:hover > .lightCard__content2--hover {
-    color: aqua;
-    font-size: 1.3rem;
-    font-weight: 900;
-    transition: color 1s;
-}
-
-.lightCard--hover:hover > .lightCard__content3--hover {
-    color: chartreuse;
-    font-size: 1.5rem;
-    font-weight: 900;
-    transition: color 1s;
-}
-
-.lightCard--hover:hover > .lightCard__content4--hover {
-    color: gold;
-    font-size: 1.7rem;
-    font-weight: 900;
-    transition: color 1s;
-}
-
-.lightCard__img--hover:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-    transition: filter 1s;
-    transition: opacity 1s;
+    &__img:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transition: filter 1.5s;
+        transition: opacity 1.5s;
+    }
 }
